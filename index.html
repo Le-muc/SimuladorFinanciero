@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulador Financiero</title>
+    
+    <!-- Agregar Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center mb-4">Simulador Financiero</h1>
+        
+        <div class="form-group">
+            <label for="ingresos">Ingresos Mensuales:</label>
+            <input type="number" class="form-control" id="ingresos" placeholder="Ingresa tus ingresos">
+        </div>
+
+        <div id="categorias" class="mb-4">
+            <div class="form-group">
+                <label for="vivienda">Vivienda:</label>
+                <input type="number" class="form-control" id="vivienda" placeholder="Gasto en vivienda">
+            </div>
+            <div class="form-group">
+                <label for="alimentacion">Alimentación:</label>
+                <input type="number" class="form-control" id="alimentacion" placeholder="Gasto en alimentación">
+            </div>
+            <div class="form-group">
+                <label for="transporte">Transporte:</label>
+                <input type="number" class="form-control" id="transporte" placeholder="Gasto en transporte">
+            </div>
+            <div class="form-group">
+                <label for="entretenimiento">Entretenimiento:</label>
+                <input type="number" class="form-control" id="entretenimiento" placeholder="Gasto en entretenimiento">
+            </div>
+            <div class="form-group">
+                <label for="salud">Salud:</label>
+                <input type="number" class="form-control" id="salud" placeholder="Gasto en salud">
+            </div>
+        </div>
+
+        <button id="calcular" class="btn btn-primary btn-block">Calcular</button>
+        <button id="reiniciar" class="btn btn-danger btn-block mt-2">Reiniciar Datos</button>
+
+        <div id="resultado" class="mt-4"></div>
+    </div>
+
+    <!-- Agregar Bootstrap JS y Popper.js (necesario para componentes interactivos) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
+    <script src="./main.js"></script>
+</body>
+</html>
